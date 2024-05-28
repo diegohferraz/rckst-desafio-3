@@ -15,4 +15,68 @@
 body {
   font-family: "Poppins", monospace;
   background-color: var(--dark-color);
+  min-height: 100vh;
+  background-color: var(--light-blue);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 465px;
+  background-color: var(--dark-blue);
+  z-index: -1;
+}
+
+header,
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 107px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Staatliches";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--white);
+  margin-bottom: 22px;
+}
+
+form {
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 32px;
+}
+
+#form-header {
+  background-color: var(--red);
+  text-align: center;
+  padding: 47px;
+}
+
+h3 {
+  font-family: "Staatliches";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--white);
+}
+
+#form-container {
+  padding: 32px 64px;
 }
