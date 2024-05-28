@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Stage-03 - Formulário-avançado</title>
+  </head>
+  <body>
+    <header>
+      <h1>avalie a sua mentoria</h1>
+      <h2>Chegou a hora de avaliar o seu mentor. Bora lá?</h2>
+      <img src="images/nota.svg" alt="Logo Rocket.sect" />
+    </header>
+    <main>
+      <form>
+        <div>
+          <h3>Informações pessoais</h3>
+        </div>
+        <div>
+          <div class="form-line">
+            <div>
+              <label for="name">Nome</label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label for="surname">Sobrenome</label>
+              <input type="text" id="surname" />
+            </div>
+          </div>
+
+          <div class="form-line">
+            <div>
+              <label for="mail">
+                Email <span>(digite um email válido)</span>
+              </label>
+              <input type="email" id="mail" />
+            </div>
+          </div>
+
+          <h4>Informações do mentor</h4>
+
+          <div class="form-line">
+            <div>
+              <label for="mentor">Selecione quem foi o seu mentor</label>
+              <select id="mentor">
+                <option>Diego</option>
+                <option>Mayk</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-line">
+            <div>
+              <label for="feedback">Feedback sobre o mentor</label>
+              <textarea id="feedback"></textarea>
+            </div>
+          </div>
+
+          <div>
+            <input type="checkbox" name="all-solved" id="all-solved" />
+            <label for="all-solved">
+              Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+            </label>
+          </div>
+
+          <h4>Agendando próxima mentoria</h4>
+
+          <div>
+            <div>
+              <label for="date">Data <span>(DD/MM/AAAA)</span> </label>
+              <input type="date" id="mail" />
+            </div>
+            <div>
+              <label for="hour-start">Das</label>
+              <input type="date" id="hour-start" />
+            </div>
+            <div>
+              <label for="hour-end">Até</label>
+              <input type="date" id="hour-end" />
+            </div>
+          </div>
+
+          <button>Salvar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
